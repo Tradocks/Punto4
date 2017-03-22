@@ -12,25 +12,91 @@
     <body>
         <h1>Registrar partido</h1>
         <br>
+        <form id="for1">    
         <table border="0" id="tabla">    
             <tbody>
                 <tr>
                     <td>Equipo Local</td>
-                    <td> <input type="" </td>
+                    <td> 
+                        <select name="lista1" id="listaL">
+                            <option value="A"> A </option>
+                            <option value="B"> B </option>
+                            <option value="C"> C </option>                    
+                        </select>
+                    </td>
                     <td>Equipo Visitante</td> 
-                    <td>...</td>  
+                    <td>
+                        <select name="lista1" id="listaV">
+                            <option value="A"> A </option>
+                            <option value="B"> B </option>
+                            <option value="C"> C </option>                    
+                        </select>
+                    </td>  
                     <td><img src="imagen/logo1.jpg" alt="logo campeonato" title="logo campeonato"></td>  
                 </tr>     
                 <tr>
                     <td>Goles Local</td>
-                    <td> <input type="number"> </td>
+                    <td> <input type="number" id="txtL" required> </td>
                     <td>Goles Visitante</td> 
-                    <td> <input type="number0>" </td>
+                    <td> <input type="number0>" id="txtV" required> </td>
                 </tr>
             </tbody>
-        </table>    
-  
-    
+         </table>    
+            <br>
+            <input type="submit" value="Jugar" >
+            <br><br><br>
+            </form>
+            
+            
+    <br>
+    <hr>
+
+    <table border="1">
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PP</th>
+                    <th>PE</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A:</td>
+                    <td id="pja"> </td>
+                    <td id="pga"> </td>
+                    <td id="ppa"> </td>
+                    <td id="pea"> </td>
+                    <td id="gfa"> </td>
+                    <td id="gca"> </td>
+                    <td id="puna"> </td>
+                </tr>
+                <tr>
+                    <td>B:</td>
+                    <td id="pjb"> </td>
+                    <td id="pgb"> </td>
+                    <td id="ppb"> </td>
+                    <td id="peb"> </td>
+                    <td id="gfb"> </td>
+                    <td id="gcb"> </td>
+                    <td id="punb"> </td>
+                </tr>
+                <tr>
+                    <td>C:</td>
+                    <td id="pjc"> </td>
+                    <td id="pgc"> </td>
+                    <td id="ppc"> </td>
+                    <td id="pec"> </td>
+                    <td id="gfc"> </td>
+                    <td id="gcc"> </td>
+                    <td id="punc"> </td>
+                </tr>
+            </tbody>
+        </table>
         
         
         
