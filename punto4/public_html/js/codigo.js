@@ -1,17 +1,17 @@
 $(document).ready(function(){
     var a=0;
     var b=0;
-    
-    
-    
+
         //alert("Bienvenido"); 
     $("#for1").submit(function (parametro){
         parametro.preventDefault();
-        
-        if(d === e){alert("Error un equipo no puede jugar contra si mismo ");}
-        
+
         var d="";
         var e="";
+        d=$("#listaL").val();
+        e=$("#listaV").val();
+        if(d === e){alert("Error un equipo no puede jugar contra si mismo ");}
+        
         
         var pj=0;
         var pg=0;
@@ -24,9 +24,7 @@ $(document).ready(function(){
         a= parseInt($("#txtL").val());
         b= parseInt($("#txtV").val());
         
-        d=$("#listaL").val();
-        e=$("#listaV").val();
-        
+
         pj= parseInt($("#pja").val());
         pg= parseInt($("#pga" ).val());
         pp= parseInt($("#ppa").val());
@@ -35,22 +33,13 @@ $(document).ready(function(){
         gc= parseInt($("#gca").val());
         pun= parseInt($("#puna").val());
        
-        if(d !== e){  
-            if(a > b)
-            {
-                
-                
-                
-                
-                
-            }
-            
+ 
             
             //$("#divres").append("<tr>");
-            $("#divres").append("<td>" + a + "+" + b + " = </td>");
-            $("#divres").append("<td>" + c + "</td></tr>");
+            $("#divres").append("<td>" pj "</td>");
+            //$("#divres").append("<td>" + c + "</td></tr>");
             //$("#divres").append(c);
-        }
+        
     
              
     });
