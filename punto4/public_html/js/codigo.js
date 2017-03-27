@@ -77,9 +77,9 @@ $(document).ready(function(){
                 pp1=pp1+1;
                 pg2=pg2+1;
                 $("#ppa").empty();
-                $("#ppa").append("<td>" + pg1 + "</td>");
+                $("#ppa").append("<td>" + pp1 + "</td>");
                 $("#pgb").empty();
-                $("#pgb").append("<td>" + pp2 + "</td>");
+                $("#pgb").append("<td>" + pg2 + "</td>");
             }
              if(a===b)
             {
@@ -145,9 +145,9 @@ $(document).ready(function(){
                 pp1=pp1+1;
                 pg3=pg3+1;
                 $("#ppa").empty();
-                $("#ppa").append("<td>" + pg1 + "</td>");
+                $("#ppa").append("<td>" + pp1 + "</td>");
                 $("#pgc").empty();
-                $("#pgc").append("<td>" + pp3 + "</td>");
+                $("#pgc").append("<td>" + pg3 + "</td>");
             }
              if(a===b)
             {
@@ -213,9 +213,9 @@ $(document).ready(function(){
                 pp2=pp2+1;
                 pg3=pg3+1;
                 $("#ppb").empty();
-                $("#ppb").append("<td>" + pg2 + "</td>");
+                $("#ppb").append("<td>" + pp2 + "</td>");
                 $("#pgc").empty();
-                $("#pgc").append("<td>" + pp3 + "</td>");
+                $("#pgc").append("<td>" + pg3 + "</td>");
             }
              if(a===b)
             {
@@ -244,12 +244,12 @@ $(document).ready(function(){
             $("#pjb").empty();
             $("#pjb").append("<td>" + pj2 + "</td>");
             
-            b=parseInt($("#txtL").val());
-            gf1= gf1 + b;
+            a=parseInt($("#txtV").val());
+            gf1= gf1 + a;
             $("#gfa").empty();
             $("#gfa").append("<td>" + gf1 + "</td>");            
-            a=parseInt($("#txtV").val());
-            gf2= gf2 + a;
+            b=parseInt($("#txtL").val());
+            gf2= gf2 + b;
             $("#gfb").empty();
             $("#gfb").append("<td>" + gf2 + "</td>");            
             
@@ -260,7 +260,7 @@ $(document).ready(function(){
             $("#gcb").empty();
             $("#gcb").append("<td>" + gc2 + "</td>");
             
-            if(b>a)
+            if(a>b)
             {
                 pt1= pt1 +3;
                 $("#puna").empty();
@@ -273,7 +273,7 @@ $(document).ready(function(){
                 $("#ppb").empty();
                 $("#ppb").append("<td>" + pp2 + "</td>");
             }
-             if(b<a)
+             if(a<b)
             {
                 pt2= pt2 +3;
                 $("#punb").empty();
@@ -282,9 +282,9 @@ $(document).ready(function(){
                 pp1=pp1+1;
                 pg2=pg2+1;
                 $("#ppa").empty();
-                $("#ppa").append("<td>" + pg1 + "</td>");
+                $("#ppa").append("<td>" + pp1 + "</td>");
                 $("#pgb").empty();
-                $("#pgb").append("<td>" + pp2 + "</td>");
+                $("#pgb").append("<td>" + pg2 + "</td>");
             }
              if(a===b)
             {
@@ -312,12 +312,12 @@ $(document).ready(function(){
             $("#pjc").empty();
             $("#pjc").append("<td>" + pj3 + "</td>");
             
-            b=parseInt($("#txtL").val());
-            gf1= gf1 + b;
+            a=parseInt($("#txtV").val());
+            gf1= gf1 + a;
             $("#gfa").empty();
             $("#gfa").append("<td>" + gf1 + "</td>");            
-            a=parseInt($("#txtV").val());
-            gf3= gf3 + a;
+            b=parseInt($("#txtL").val());
+            gf3= gf3 + b;
             $("#gfc").empty();
             $("#gfc").append("<td>" + gf3 + "</td>");            
             
@@ -328,7 +328,7 @@ $(document).ready(function(){
             $("#gcc").empty();
             $("#gcc").append("<td>" + gc3 + "</td>");
             
-            if(b>a)
+            if(a>b)
             {
                 pt1= pt1 +3;
                 $("#puna").empty();
@@ -341,7 +341,7 @@ $(document).ready(function(){
                 $("#ppc").empty();
                 $("#ppc").append("<td>" + pp3 + "</td>");
             }
-             if(b<a)
+             if(a<b)
             {
                 pt3= pt3 +3;
                 $("#punc").empty();
@@ -350,9 +350,9 @@ $(document).ready(function(){
                 pp1=pp1+1;
                 pg3=pg3+1;
                 $("#ppa").empty();
-                $("#ppa").append("<td>" + pg1 + "</td>");
+                $("#ppa").append("<td>" + pp1 + "</td>");
                 $("#pgc").empty();
-                $("#pgc").append("<td>" + pp3 + "</td>");
+                $("#pgc").append("<td>" + pg3 + "</td>");
             }
              if(a===b)
             {
@@ -370,8 +370,74 @@ $(document).ready(function(){
                 $("#pec").empty();
                 $("#pec").append("<td>" + pe3 + "</td>");
             }
-        }      
+        }
+         if(d=== 'C' && e==='B')
+        { 
+            pj3=pj3+1;
+            pj2=pj2+1;
+            $("#pjc").empty();
+            $("#pjc").append("<td>" + pj3 + "</td>");
+            $("#pjb").empty();
+            $("#pjb").append("<td>" + pj2 + "</td>");
+            
+            a=parseInt($("#txtL").val());
+            gf3= gf3 + a;
+            $("#gfc").empty();
+            $("#gfc").append("<td>" + gf3 + "</td>");            
+            b=parseInt($("#txtV").val());
+            gf2= gf2 + b;
+            $("#gfb").empty();
+            $("#gfb").append("<td>" + gf2 + "</td>");            
+            
+            gc3= gc3 + b;
+            $("#gcc").empty();
+            $("#gcc").append("<td>" + gc3 + "</td>");
+            gc2= gc2 + a;
+            $("#gcb").empty();
+            $("#gcb").append("<td>" + gc2 + "</td>");
+            
+            if(a>b)
+            {
+                pt3= pt3 +3;
+                $("#punc").empty();
+                $("#punc").append("<td>" + pt3 + "</td>");
+                
+                pg3=pg3+1;
+                pp2=pp2+1;
+                $("#pgc").empty();
+                $("#pgc").append("<td>" + pg3 + "</td>");
+                $("#ppb").empty();
+                $("#ppb").append("<td>" + pp2 + "</td>");
+            }
+             if(a<b)
+            {
+                pt2= pt2 +3;
+                $("#punb").empty();
+                $("#punb").append("<td>" + pt2 + "</td>");
+                
+                pp3=pp3+1;
+                pg2=pg2+1;
+                $("#ppc").empty();
+                $("#ppc").append("<td>" + pp3 + "</td>");
+                $("#pgb").empty();
+                $("#pgb").append("<td>" + pg2 + "</td>");
+            }
+             if(a===b)
+            {
+                pt1= pt1 +1;
+                $("#puna").empty();
+                $("#puna").append("<td>" + pt1 + "</td>");
+                pt2= pt2 +1;
+                $("#punb").empty();
+                $("#punb").append("<td>" + pt2 + "</td>");
+                
+                pe1=pe1+1;
+                pe2=pe2+1;
+                $("#pea").empty();
+                $("#pea").append("<td>" + pe1 + "</td>");
+                $("#peb").empty();
+                $("#peb").append("<td>" + pe2 + "</td>");
+            }
+        }
     }
 });
-
-
